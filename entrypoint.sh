@@ -24,8 +24,6 @@ if test $9 == "true";then
 fi
 
 if test $7 = "true"; then
-  echo "Connection via sftp protocol only, skip the command to create a directory"
-else
   echo 'Create directory if needed'
   ssh -o StrictHostKeyChecking=no -p $3 -i $TEMP_SSH_PRIVATE_KEY_FILE $1@$2 mkdir -p $6
 fi
