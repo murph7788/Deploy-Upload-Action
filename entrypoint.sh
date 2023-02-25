@@ -22,6 +22,13 @@ do
     echo $line
 done
 
+echo '----------------------'
+
+cat $TEMP_KNOWN_HOST_FILE | while read line
+do
+    echo $line
+done
+
 echo '-----debug end-------'
 
 echo 'ssh start'
