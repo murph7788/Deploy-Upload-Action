@@ -17,17 +17,11 @@ chmod 600 $TEMP_SSH_PRIVATE_KEY_FILE
 
 echo '-----debug start-----'
 
-cat $TEMP_SSH_PRIVATE_KEY_FILE | while read line
-do
-    echo $line
-done
+cat $TEMP_SSH_PRIVATE_KEY_FILE
 
 echo '----------------------'
 
 cat $TEMP_KNOWN_HOST_FILE | while read line
-do
-    echo $line
-done
 
 echo '-----debug end-------'
 
