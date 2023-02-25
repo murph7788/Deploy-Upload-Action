@@ -33,7 +33,7 @@ fi
 if test $10 = "true"; then
   echo 'SCP Start'
   #-o StrictHostKeyChecking=no avoid Host key verification failed.
-  scp -P $3 -o StrictHostKeyChecking=no -i $TEMP_SSH_PRIVATE_KEY_FILE $1@$2:$5 $6
+  scp -P $3 -o StrictHostKeyChecking=no -i $TEMP_SSH_PRIVATE_KEY_FILE $6 $1@$2:$5
 else
   echo 'SFTP Start'
   # create a temporary file containing sftp commands
