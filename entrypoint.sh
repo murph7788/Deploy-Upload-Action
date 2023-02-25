@@ -15,6 +15,15 @@ printf "%s" $2 >$TEMP_KNOWN_HOST_FILE
 # avoid Permissions too open
 chmod 600 $TEMP_SSH_PRIVATE_KEY_FILE
 
+echo '-----debug start-----'
+
+cat $TEMP_SSH_PRIVATE_KEY_FILE | while read line
+do
+    echo $line
+done
+
+echo '-----debug end-------'
+
 echo 'ssh start'
 
 # ssh -o StrictHostKeyChecking=no -p $3 -i $TEMP_SSH_PRIVATE_KEY_FILE $1@$2 mkdir -p $6
