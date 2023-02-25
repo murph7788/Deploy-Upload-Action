@@ -21,7 +21,7 @@ cat $TEMP_SSH_PRIVATE_KEY_FILE
 
 echo '----------------------'
 
-cat $TEMP_KNOWN_HOST_FILE | while read line
+cat $TEMP_KNOWN_HOST_FILE
 
 echo '-----debug end-------'
 
